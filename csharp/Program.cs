@@ -11,7 +11,7 @@ namespace csharp
             do
             {
                    
-                Console.WriteLine("Digite de 1 à 2, o exercício desejado: (0 - PARA SAIR)");
+                Console.WriteLine("Digite de 1 à 3, o exercício desejado: (0 - PARA SAIR)");
                 opcao = Console.ReadLine();
 
                 switch (opcao)
@@ -25,6 +25,11 @@ namespace csharp
                         Lista1_Exe2 exe2 = new Lista1_Exe2();
                         exe2.CalculeArea();
                         break;                    
+
+                    case "3":
+                        Lista3_Exe1 l3_Exe1 = new Lista3_Exe1();
+                        l3_Exe1.Tabuada();
+                        break;                        
 
                     default:
                         if (opcao!="0")
